@@ -1,0 +1,29 @@
+<plugin name='webflow' version='2.0.8.1' grailsVersion='2.2 &gt; *'>
+  <author>Graeme Rocher</author>
+  <authorEmail>graeme.rocher@springsource.com</authorEmail>
+  <title>Spring Web Flow Plugin</title>
+  <description>Integrates Spring Web Flow with Grails</description>
+  <documentation>http://grails.org/doc/latest/guide/theWebLayer.html#webflow</documentation>
+  <type>WebflowGrailsPlugin</type>
+  <resources />
+  <repositories>
+    <repository name='grailsCentral' url='http://grails.org/plugins' />
+    <repository name='mavenCentral' url='http://repo1.maven.org/maven2/' />
+  </repositories>
+  <dependencies>
+    <compile>
+      <dependency group='org.springframework.webflow' name='spring-webflow' version='2.0.8.RELEASE' />
+      <dependency group='org.springframework.webflow' name='spring-binding' version='2.0.8.RELEASE' />
+      <dependency group='dom4j' name='dom4j' version='1.6.1' />
+      <dependency group='org.springframework.webflow' name='spring-js' version='2.0.8.RELEASE' />
+      <dependency group='org.hibernate' name='hibernate-core' version='3.6.10.Final' />
+      <dependency group='org.hibernate' name='hibernate-commons-annotations' version='3.2.0.Final' />
+    </compile>
+    <runtime>
+      <dependency group='ognl' name='ognl' version='2.7.3' />
+    </runtime>
+  </dependencies>
+  <plugins />
+  <runtimePluginRequirements />
+  <behavior />
+</plugin>
